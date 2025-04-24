@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo exercicio solo</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            color:color(from color srgb r g b)
+
+        }
+        p{
+            font-size: 10px 20px;
+            color: #333;
+            margin : 20px;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:#003366
+        }
+    </style>
+</head>
+<body>
+    <h1>GERADOR DE TEXTO ALEATORIO</h1>
+    <p id: "Texto"> Clique para gerar o texto!</p>
+    <button onclick = "gerarTextoAleatorio()"> Gerar novo texto</button>
+
+    <script>
+        //Lista de frases aleatorias
+        const frases = [
+            "A tecnologia transforma o mundo diariamente.",
+            "Redes conectam pessoas e ideias.",
+            "Programação é a arte de criar soluções.",
+            "A Internet é um universo de possibilidades.",
+            "Aprender algo novo é sempre um desafio empolgante.",
+            "O futuro é construído com código e criatividade."
+        ];
+        function gerarTextoAleatorio(){
+            const indice = Math.floor(Math.random()* frases.length);
+            document.getElementById("texto").innerText = frases[indice]; 
+        }
+
+        window.onload = gerarTextoAleatorio;
+        //Chamando a função para gerar um texto aleatório quando a página é carregada.
+        
+    </script>
+</body>
+</html>
