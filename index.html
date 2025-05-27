@@ -3,62 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo exercicio solo</title>
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-            color:color(from color srgb r g b)
+    <title>Como surgiu o android?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pacote-projeto-d010/imagens/favicon.ico">
 
-        }
-        p{
-            font-size: 10px 20px;
-            color: #333;
-            margin : 20px;
-        }
-        button{
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #0066cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover{
-            background-color:#003366
-        }
-    </style>
 </head>
 <body>
-    <h1>GERADOR DE TEXTO ALEATORIO</h1>
-    <p id: "Texto"> Clique para gerar o texto!</p>
-    <button onclick = "gerarTextoAleatorio()"> Gerar novo texto</button>
+    <header>
+        <h1>Curiosidades de tecnologia</h1>
+        <p>Tudo aquilo que voce sempre quis saber sobre o mundo tech</p>
+    </header>
+    <nav>
+        <a href="#"> Home</a>
+        <a href="#">Notícias</a>
+        <a href="#">Curiosidades</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+<main>
+    <article>
+        <h1>Historia do mascote do Android</h1>
 
-    <script>
-        //Lista de frases aleatorias
-        const frases = [
-            "A tecnologia transforma o mundo diariamente.",
-            "Redes conectam pessoas e ideias.",
-            "Programação é a arte de criar soluções.",
-            "A Internet é um universo de possibilidades.",
-            "Aprender algo novo é sempre um desafio empolgante.",
-            "O futuro é construído com código e criatividade."
-        ];
-        function gerarTextoAleatorio(){
-            const indice = Math.floor(Math.random()* frases.length);
-            document.getElementById("texto").innerText = frases[indice]; 
-        }
+        <p>
+            Provavelmente voce ja sabe que o Android é um sistema operacional desenvolvido pelo Google, é um dos mais utilizados para dispositivos moveis do mundo. Mas talvez voce não saiba queo seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe o artigo para aprender mais sobre o robozinho.
+        </p>
+    </article>
+    <p>
+        A primeira tentativa de ter um mascote foi em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-show-us-the-android-mascot-that-almost-was-20130103/" target = "_blank" class="externo">Dan Morrill</a>. Ele conta que abriu o <a href = "https://inkscape.org/pt-br" target = "_blank" class= "externo">Inkscape</a> e começou a desenhar um robô verde, mas o resultado foi um tanto quanto estranho. O desenho era tão bizarro que ele mesmo brincou dizendo que parecia mais um alienígena do que um robô. 
+    </p>
 
-        window.onload = gerarTextoAleatorio;
-        //Chamando a função para gerar um texto aleatório quando a página é carregada.
+    <picture>
+        <source media = "max-width: 670px" srcset="pacote-projeto-d010/imagens/dan-droids.webp>
+        <source srcset="pacote-projeto-d010/imagens/dan-droids.png" type="image/png">
+
+        <img src="pacote-projeto-d010/imagens/dan-droids.png" alt="Primeiro mascote do Android">
+    </picture>
         
-    </script>
+    <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong>Dandroids</strong>
+    </p>
+
+
+    <h2>
+        Surge um novo mascote
+    </h2>
+
+    <p>
+        A ideia de ter um mascote foi amadurecendo 
+        foi amadurecendo e a missão foi passada para um profissional da área. A ilustradora russa <a href = "https://www.irinablok.com/" target ="_blank" class = "externo">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
+    </p>
+
+<picture>
+    <source media = "(max-width: 400px)" srcset = "pacote-projeto-d010/imagens/irina-blok-pq.jpg">
+    <img src="pacote-projeto-d010/imagens/irina-blok-pq.jpg" alt="Irina Blok">
+</picture>
+
+<p>A ideia principal da Irina era representar tudo graficamente e com poucos traços e com forma mais chapada. O desenho também deveria gerar identificação rápida com quem olha. Surgiu então o <strong>Bugdroid</strong>, o novo mascote do android </p>
+
+<img src="pacote-projeto-d010/imagens/bugdroid.png" class = "Pequena" alt="Bugdroid">
+
+
+<p>
+    A principal inspiração para os traços do nov <strong>Bugdroid</strong> veio daqueles bonequinhos que ilustram portas de banheiro para indicar o genero de cada porta. Conta a lenda que o artista estava criando na sua mesa de escritorio do <strong>Google</strong> e olhou para o lado dos banheiros e identificação foi imediata: simple, limpo e objetivo
+</p>
+
+<div class = "video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/emvWuBBQLng?si=BeoqezdBgwO2T3uJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    
+<aside>
+    <h3>Quer aprender mais?</h3>
+
+    <p>
+        Outro assunto curioso em relação ao android é que a cada versão do sistema é que cada versão é feita homenageando um doce, em ordem alfabética a partir da versão 1.5, até a 9.0
+    </p>
+    <ul>
+        <li>
+            <li>Android 1.0/1.1: (Sem nome de código)</li>
+            <li>Android 1.5: Cupcake</li>
+            <li>Android 1.6: Donut</li>
+            <li>Android 2.0/2.1: Eclair</li>
+            <li>Android 2.2: Froyo (Frozen Yogurt)</li>
+            <li>Android 2.3: Gingerbread</li>
+            <li>Android 3.0/3.1/3.2: Honeycomb</li>
+            <li>Android 4.0: Ice Cream Sandwich</li>
+            <li>Android 4.1/4.2/4.3: Jelly Bean</li>
+            <li>Android 4.4: KitKat</li>
+            <li>Android 5.0/5.1: Lollipop</li>
+            <li>Android 6.0: Marshmallow</li>
+            <li>Android 7.0/7.1: Nougat</li>
+            <li>Android 8.0/8.1: Oreo</li>
+            <li>Android 9: Pie</li>
+            <li>Android 10: Q</li>
+            <li>Android 11:</li>
+            <li>Android 12:</li>
+            <li>Android 13:</li>
+            <li>Android 14:</li>
+            <li>Android 15:</li>
+        </li>
+
+        <p>Infelizmente, o Android não existiu, pois o google resolveu pôr fim a essa divertida prática e começou a utilizar numerações, o que deu origem ao <strong>Android 10</strong>
+        </p>
+
+        <p>
+            Acesse aqui o site <a href="https://www.android.com/intl/pt_br/" target = "_blank" class="externo ">Android history</a> para conhecer a sequencia das versões do Android, e o que cada uma trouxe para o sitema Android.
+        </p>
+    </ul>
+</aside>
+<p>
+Então é isso, espero que tenha gostado do nosso artigo com essa curiosidade sobre o
+</p>
+
+<article>
+    <main>
+        <footer>
+            <p>
+                Site criado por <a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios" target = "_blank">GustavoGuanabara</a>para o <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target = '_blank' class = "externo">CursoemVideo</a>
+            </p>
+        </footer>
+    </main>
+</article>
+
+</main>
 </body>
 </html>
